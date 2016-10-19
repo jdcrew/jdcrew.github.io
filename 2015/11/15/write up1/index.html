@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Can U See through the star &amp; File Recovery &amp; Caeser&#39;s Code | Welcome to Jdcool&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="最近才和同学一起组了个队伍。安全联赛的，总得逼自己一把，入个门。几个练习网站。Ringzer0Teamwechallxctf">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Can U See through the star & File Recovery & Caeser's Code">
+<meta property="og:url" content="http://x.xydayer.me/2015/11/15/write up1/index.html">
+<meta property="og:site_name" content="Welcome to Jdcool's Blog">
+<meta property="og:description" content="最近才和同学一起组了个队伍。安全联赛的，总得逼自己一把，入个门。几个练习网站。Ringzer0Teamwechallxctf">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/star1.png">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/star2.png">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/star3.png">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/star4.png">
+<meta property="og:updated_time" content="2016-10-19T08:21:22.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Can U See through the star & File Recovery & Caeser's Code">
+<meta name="twitter:description" content="最近才和同学一起组了个队伍。安全联赛的，总得逼自己一把，入个门。几个练习网站。Ringzer0Teamwechallxctf">
+<meta name="twitter:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/star1.png">
+  
+    <link rel="alternative" href="/atom.xml" title="Welcome to Jdcool&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+</head>
+<body>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Welcome to Jdcool&#39;s Blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Winter is Coming</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="x.xydayer.me">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+    <div class="outer">
+      <section id="main"><article id="post-write up1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/11/15/write up1/" class="article-date">
+  <time datetime="2015-11-14T16:00:00.000Z" itemprop="datePublished">2015-11-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Can U See through the star &amp; File Recovery &amp; Caeser&#39;s Code
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>最近才和同学一起组了个队伍。<br>安全联赛的，总得逼自己一把，入个门。<br>几个练习网站。<br><a href="http://ringzer0team.com/challenges" target="_blank" rel="external">Ringzer0Team</a><br><a href="www.wechall.net">wechall</a><br><a href="www.time.xctf.org.cn">xctf</a><br><a id="more"></a></p>
+<hr>
+<blockquote>
+<ul>
+<li>Download the file</li>
+</ul>
+</blockquote>
+<p>下下来一个.tar的文件,解压缩之后可以看到一个名为 ff5749e901595df1b04c3055d64df615 的文件</p>
+<blockquote>
+<ul>
+<li>winhex 打开这个文件</li>
+</ul>
+</blockquote>
+<p><img src="http://7xn8lr.com1.z0.glb.clouddn.com/star1.png" alt="file"></p>
+<p>可以看到这其实是一个程序</p>
+<p>我们查一查exe的文件结构,是一个以MZ开头的文件,所以把文件中MZ之前的部分删除,改文件格式为.exe文件</p>
+<blockquote>
+<ul>
+<li>运行这个Crackme程序</li>
+</ul>
+</blockquote>
+<p><img src="http://7xn8lr.com1.z0.glb.clouddn.com/star2.png" alt=""></p>
+<blockquote>
+<ul>
+<li>然后用ILSpy反编译就可以看到</li>
+</ul>
+</blockquote>
+<p><img src="http://7xn8lr.com1.z0.glb.clouddn.com/star3.png" alt=""></p>
+<blockquote>
+<ul>
+<li>找到buttonclick函数就直接看到flag了</li>
+</ul>
+</blockquote>
+<p><img src="http://7xn8lr.com1.z0.glb.clouddn.com/star4.png" alt=""></p>
+<hr>
+<p>自己摸索还是有点累啊,现在都是摸索工具和套路,学习吧</p>
+<hr>
+<p>然后一个很简单的凯撒密码。<br>写了几行perl代码就破解了。</p>
+<figure class="highlight perl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#! /usr/bin/perl </span></div><div class="line"><span class="keyword">use</span> <span class="number">5.010</span>;</div><div class="line"><span class="keyword">while</span>(&lt;&gt;)&#123;</div><div class="line">	<span class="regexp">s/(.)/$1 /g</span>;</div><div class="line">	@list = <span class="keyword">split</span> (<span class="regexp">/ /</span>);</div><div class="line">	<span class="keyword">for</span>(<span class="number">1</span>..<span class="number">25</span>)&#123;	</div><div class="line">		<span class="keyword">foreach</span>(@list)&#123;<span class="keyword">print</span> $_=(<span class="keyword">chr</span>((<span class="keyword">ord</span>($_) &lt; <span class="number">122</span>)? <span class="keyword">ord</span>($_)+<span class="number">1</span> : <span class="number">97</span>));&#125;</div><div class="line">	<span class="keyword">say</span> <span class="string">"\n"</span>;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<hr>
+<p>File Recovery这道题目其实就是enc的RSA密钥解密。<br>在kali系统里面打开openssl，输入以下命令就出来了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">openssl rsautl -decrypt -in flag.enc -inkey private.pem -out flag.txt</div></pre></td></tr></table></figure>
+<p>打开flag.txt文件就能够看到flag了。</p>
+<p>都是比较简单的一些东西吧。但是折腾了很久。</p>
+<p>找到一个关于openssl加密解密的资料，挺好的<br><a href="http://blog.csdn.net/lucien_cc/article/details/18407451" target="_blank" rel="external">openssl encrypt &amp; decrypt</a></p>
+<hr>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://x.xydayer.me/2015/11/15/write up1/" data-id="ciugoagpm000have6iplnu5do" class="article-share-link" data-share="baidu" data-title="Can U See through the star &amp; File Recovery &amp; Caeser&#39;s Code">Share</a>
+      
+
+      
+        <a href="http://x.xydayer.me/2015/11/15/write up1/#ds-thread" class="article-comment-link">Comments</a>
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Write-Up/">Write Up</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/11/17/thinking/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          思考，关于技术
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/10/17/5th/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">U盘启动安装Kali Linux以及Nessus安装</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+  <section id="comments">
+    <div id="ds-thread" class="ds-thread" data-thread-key="2015/11/15/write up1/" data-title="Can U See through the star &amp; File Recovery &amp; Caeser&#39;s Code" data-url="http://x.xydayer.me/2015/11/15/write up1/"></div>
+  </section>
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/">MySQL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/">Python</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Write-Up/">Write Up</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kali/">kali</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/个人/">个人</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客相关/">博客相关</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据库/">数据库</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日常/">日常</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/MySQL/" style="font-size: 10px;">MySQL</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/Write-Up/" style="font-size: 20px;">Write Up</a> <a href="/tags/kali/" style="font-size: 10px;">kali</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/个人/" style="font-size: 20px;">个人</a> <a href="/tags/博客相关/" style="font-size: 10px;">博客相关</a> <a href="/tags/数据库/" style="font-size: 10px;">数据库</a> <a href="/tags/日常/" style="font-size: 10px;">日常</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2015/12/11/6th/">日常打卡</a>
+          </li>
+        
+          <li>
+            <a href="/2015/12/11/7th/">Python习题（给Python开个标签吧）</a>
+          </li>
+        
+          <li>
+            <a href="/2015/11/19/writeup2/">OllyDebug工具使用技巧(TraceMe Write Up)</a>
+          </li>
+        
+          <li>
+            <a href="/2015/11/17/thinking/">思考，关于技术</a>
+          </li>
+        
+          <li>
+            <a href="/2015/11/15/write up1/">Can U See through the star &amp; File Recovery &amp; Caeser&#39;s Code</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Links</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="http://xiguabaobao.com" target="_blank">主题作者</a>
+          </li>
+        
+          <li>
+            <a href="http://y.xydayer.me" target="_blank">大傻逼</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Jdcool<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape-plus</a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+  <!-- totop start -->
+<div id="totop">
+<a title="totop"><img src="/img/scrollup.png"/></a>
+</div>
+
+<!-- totop end -->
+
+<!-- 多说公共js代码 start -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"jdcrew"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共js代码 end -->
+
+
+<!-- 百度分享 start -->
+
+<div id="article-share-box" class="article-share-box">
+  <div id="bdshare" class="bdsharebuttonbox article-share-links">
+    <a class="article-share-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a class="article-share-weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a class="article-share-qq" data-cmd="sqq" title="分享到QQ"></a>
+    <a class="article-share-renren" data-cmd="renren" title="分享到人人网"></a>
+    <a class="article-share-more" data-cmd="more" title="更多"></a>
+  </div>
+</div>
+<script>
+  function SetShareData(cmd, config) {
+    if (shareDataTitle && shareDataUrl) {
+      config.bdText = shareDataTitle;
+      config.bdUrl = shareDataUrl;
+    }
+    return config;
+  }
+  window._bd_share_config={
+    "common":{onBeforeClick: SetShareData},
+    "share":{"bdCustomStyle":"/css/bdshare.css"}
+  };
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+<!-- 百度分享 end -->
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+<! -- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+                processEscapes: true
+                    
+}
+  
+        });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+                  
+}
+    
+        });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Queue(function() {
+            var all = MathJax.Hub.getAllJax(), i;
+            for(i=0; i < all.length; i += 1) {
+                            all[i].SourceElement().parentNode.className += ' has-jax';
+                                    
+            }
+                
+        });
+</script>
+
+<script type="text/javascript" src="http://cdn.bootcss.com/mathjax/2.5.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<script src="/js/script.js"></script>
+
+</div>
+</body>
+</html>

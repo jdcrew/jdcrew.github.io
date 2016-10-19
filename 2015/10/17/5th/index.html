@@ -1,0 +1,423 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>U盘启动安装Kali Linux以及Nessus安装 | Welcome to Jdcool&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="U盘启动安装kali linux 1.0以及Nessus安装
+介绍　　Kali Linux是BT5的进阶版本，对于BT5中的每一个工具开发组成员都一一进行了价值衡量，并对于很多工具进行了整合以及删改，它包含了很多安全和取证以及渗透测试相关的常用工具。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="U盘启动安装Kali Linux以及Nessus安装">
+<meta property="og:url" content="http://x.xydayer.me/2015/10/17/5th/index.html">
+<meta property="og:site_name" content="Welcome to Jdcool's Blog">
+<meta property="og:description" content="U盘启动安装kali linux 1.0以及Nessus安装
+介绍　　Kali Linux是BT5的进阶版本，对于BT5中的每一个工具开发组成员都一一进行了价值衡量，并对于很多工具进行了整合以及删改，它包含了很多安全和取证以及渗透测试相关的常用工具。">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/14123322_TRmX.png">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/kali1.png">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/kali2.png">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/kali3.png">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/2015-10-16%20234549.jpg">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/2015-10-16%20234624.jpg">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/2015-10-16%20234922.jpg">
+<meta property="og:updated_time" content="2016-10-19T08:21:22.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="U盘启动安装Kali Linux以及Nessus安装">
+<meta name="twitter:description" content="U盘启动安装kali linux 1.0以及Nessus安装
+介绍　　Kali Linux是BT5的进阶版本，对于BT5中的每一个工具开发组成员都一一进行了价值衡量，并对于很多工具进行了整合以及删改，它包含了很多安全和取证以及渗透测试相关的常用工具。">
+<meta name="twitter:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/14123322_TRmX.png">
+  
+    <link rel="alternative" href="/atom.xml" title="Welcome to Jdcool&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+</head>
+<body>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Welcome to Jdcool&#39;s Blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Winter is Coming</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="x.xydayer.me">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+    <div class="outer">
+      <section id="main"><article id="post-5th" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/10/17/5th/" class="article-date">
+  <time datetime="2015-10-16T16:15:12.000Z" itemprop="datePublished">2015-10-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      U盘启动安装Kali Linux以及Nessus安装
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="U盘启动安装kali-linux-1-0以及Nessus安装"><a href="#U盘启动安装kali-linux-1-0以及Nessus安装" class="headerlink" title="U盘启动安装kali linux 1.0以及Nessus安装"></a>U盘启动安装kali linux 1.0以及Nessus安装</h2><hr>
+<h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>　　<strong>Kali Linux</strong>是BT5的进阶版本，对于BT5中的每一个工具开发组成员都一一进行了价值衡量，并对于很多工具进行了整合以及删改，它包含了很多安全和取证以及渗透测试相关的常用工具。<br><a id="more"></a><br><img src="http://7xn8lr.com1.z0.glb.clouddn.com/14123322_TRmX.png" alt="看起来就很帅气 Kali"></p>
+<hr>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>　　用U盘启动安装kali linux有一个好处就是可以通过U盘进入Live Kali然后直接对现有的磁盘格式化并重新安装kali系统。那么接下来就开始安装过程了。<br>　　U盘安装映像可以用Universal-USB-Installer来完成。<br>　　<a href="http://pan.baidu.com/s/1jG714ea" target="_blank" rel="external">Universal-USB-Installer下载点击这里</a><br>　　<a href="http://mirrors.neusoft.edu.cn/kali-images/kali-1.1.0/kali-linux-1.1.0-i386.iso" target="_blank" rel="external">Kali Linux 1.0 i386版本下载点击这里</a><br>　　64位的镜像文件自己可以去<a href="http://www.kali.org.cn/forum.php?gid=67" target="_blank" rel="external">Kali Linux中文论坛</a>找一找,很容易找到的.</p>
+<blockquote>
+<ul>
+<li>请尽量选择在有网的环境下安装Kali(仅仅方便一些)</li>
+<li>格式化你的U盘为fat32文件系统</li>
+<li>打开Universal-USB-Installer并选择下载好的iso镜像文件,选择U盘,执行下一步</li>
+</ul>
+</blockquote>
+<p><img src="http://7xn8lr.com1.z0.glb.clouddn.com/kali1.png" alt="Universal-USB-Installer"></p>
+<p><img src="http://7xn8lr.com1.z0.glb.clouddn.com/kali2.png" alt=""></p>
+<p><img src="http://7xn8lr.com1.z0.glb.clouddn.com/kali3.png" alt=""></p>
+<blockquote>
+<ul>
+<li>然后打开你要安装的电脑,插上你自制的含有神圣Kali的U盘,狂按F11 OR F12进去改为U盘启动</li>
+</ul>
+</blockquote>
+<p>接着会出现这样的选择</p>
+<p><img src="http://7xn8lr.com1.z0.glb.clouddn.com/2015-10-16%20234549.jpg" alt="Live Kali"><br>选择第一个表示进入Live Kali,在里面可以对你以前的系统进行格式化等操作。</p>
+<blockquote>
+<ul>
+<li><strong>安装</strong>请选择<strong>Install</strong>,并选择语言和区域,输入Username</li>
+<li>探测光驱阶段,如果遇到下面这种状况,可以按ALT+F2进入交互模式挂载你的U盘</li>
+</ul>
+</blockquote>
+<p><img src="http://7xn8lr.com1.z0.glb.clouddn.com/2015-10-16%20234624.jpg" alt=""><br>执行以下代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd /dev</div><div class="line">ls   #这里是小写字母l</div></pre></td></tr></table></figure></p>
+<p><img src="http://7xn8lr.com1.z0.glb.clouddn.com/2015-10-16%20234922.jpg" alt=""><br>可以显示设备列表，由此得到你的U盘设备名称是什么，这里我的U盘名称是sdb，确认后在/dev执行代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mountmedia /sdb /cdrom</div></pre></td></tr></table></figure></p>
+<p>完成挂靠设备,按ALT+F1退出,重新探测介质。继续安装。</p>
+<p>接下来进行常规的Linux分区，对于我的1T硬盘，8G内存，我选择了分成4个区</p>
+<table>
+<thead>
+<tr>
+<th>挂载</th>
+<th>大小               </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/</td>
+<td>50GB           </td>
+</tr>
+<tr>
+<td>/home</td>
+<td>剩余所有存储空间 </td>
+</tr>
+<tr>
+<td>swap</td>
+<td>16GB(小于两倍内存) </td>
+</tr>
+<tr>
+<td>/boot</td>
+<td>20GB  </td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<ul>
+<li>保存分区设置并安装系统</li>
+<li>当出现<strong>Network Mirror</strong>的选择时选择<strong>&lt;是&gt;</strong></li>
+<li>输入登陆密码,绑定域名等等,除了密码都不是必须的。</li>
+</ul>
+</blockquote>
+<hr>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://x.xydayer.me/2015/10/17/5th/" data-id="ciugoagp80006ave6buscl8pc" class="article-share-link" data-share="baidu" data-title="U盘启动安装Kali Linux以及Nessus安装">Share</a>
+      
+
+      
+        <a href="http://x.xydayer.me/2015/10/17/5th/#ds-thread" class="article-comment-link">Comments</a>
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/kali/">kali</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/11/15/write up1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Can U See through the star &amp; File Recovery &amp; Caeser&#39;s Code
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/10/16/4th/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">如何安装、简单配置以及完全卸载MySQL</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+  <section id="comments">
+    <div id="ds-thread" class="ds-thread" data-thread-key="2015/10/17/5th/" data-title="U盘启动安装Kali Linux以及Nessus安装" data-url="http://x.xydayer.me/2015/10/17/5th/"></div>
+  </section>
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/">MySQL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/">Python</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Write-Up/">Write Up</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kali/">kali</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/个人/">个人</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客相关/">博客相关</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据库/">数据库</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日常/">日常</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/MySQL/" style="font-size: 10px;">MySQL</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/Write-Up/" style="font-size: 20px;">Write Up</a> <a href="/tags/kali/" style="font-size: 10px;">kali</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/个人/" style="font-size: 20px;">个人</a> <a href="/tags/博客相关/" style="font-size: 10px;">博客相关</a> <a href="/tags/数据库/" style="font-size: 10px;">数据库</a> <a href="/tags/日常/" style="font-size: 10px;">日常</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2015/12/11/6th/">日常打卡</a>
+          </li>
+        
+          <li>
+            <a href="/2015/12/11/7th/">Python习题（给Python开个标签吧）</a>
+          </li>
+        
+          <li>
+            <a href="/2015/11/19/writeup2/">OllyDebug工具使用技巧(TraceMe Write Up)</a>
+          </li>
+        
+          <li>
+            <a href="/2015/11/17/thinking/">思考，关于技术</a>
+          </li>
+        
+          <li>
+            <a href="/2015/11/15/write up1/">Can U See through the star &amp; File Recovery &amp; Caeser&#39;s Code</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Links</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="http://xiguabaobao.com" target="_blank">主题作者</a>
+          </li>
+        
+          <li>
+            <a href="http://y.xydayer.me" target="_blank">大傻逼</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Jdcool<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape-plus</a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+  <!-- totop start -->
+<div id="totop">
+<a title="totop"><img src="/img/scrollup.png"/></a>
+</div>
+
+<!-- totop end -->
+
+<!-- 多说公共js代码 start -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"jdcrew"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共js代码 end -->
+
+
+<!-- 百度分享 start -->
+
+<div id="article-share-box" class="article-share-box">
+  <div id="bdshare" class="bdsharebuttonbox article-share-links">
+    <a class="article-share-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a class="article-share-weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a class="article-share-qq" data-cmd="sqq" title="分享到QQ"></a>
+    <a class="article-share-renren" data-cmd="renren" title="分享到人人网"></a>
+    <a class="article-share-more" data-cmd="more" title="更多"></a>
+  </div>
+</div>
+<script>
+  function SetShareData(cmd, config) {
+    if (shareDataTitle && shareDataUrl) {
+      config.bdText = shareDataTitle;
+      config.bdUrl = shareDataUrl;
+    }
+    return config;
+  }
+  window._bd_share_config={
+    "common":{onBeforeClick: SetShareData},
+    "share":{"bdCustomStyle":"/css/bdshare.css"}
+  };
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+<!-- 百度分享 end -->
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+<! -- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+                processEscapes: true
+                    
+}
+  
+        });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+                  
+}
+    
+        });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Queue(function() {
+            var all = MathJax.Hub.getAllJax(), i;
+            for(i=0; i < all.length; i += 1) {
+                            all[i].SourceElement().parentNode.className += ' has-jax';
+                                    
+            }
+                
+        });
+</script>
+
+<script type="text/javascript" src="http://cdn.bootcss.com/mathjax/2.5.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<script src="/js/script.js"></script>
+
+</div>
+</body>
+</html>

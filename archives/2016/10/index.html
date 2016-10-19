@@ -4,28 +4,14 @@
 <head>
   <meta charset="utf-8">
   
-  <title>OllyDebug工具使用技巧(TraceMe Write Up) | Welcome to Jdcool&#39;s Blog</title>
+  <title>Archives: 2016/10 | Welcome to Jdcool&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="OllyDebug是一个Win32的反汇编程序，下载地址如下OllyDebug看雪论坛的Traceme.exe下载地址如下,用这个可以很好地学习ODTraceme.exeTraceMe是一个很小的win32程序,输入用户名和对应的序列号才可以通过测试,拿到flag">
-<meta property="og:type" content="article">
-<meta property="og:title" content="OllyDebug工具使用技巧(TraceMe Write Up)">
-<meta property="og:url" content="http://x.xydayer.me/2015/11/19/writeup2/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Welcome to Jdcool's Blog">
+<meta property="og:url" content="http://x.xydayer.me/archives/2016/10/index.html">
 <meta property="og:site_name" content="Welcome to Jdcool's Blog">
-<meta property="og:description" content="OllyDebug是一个Win32的反汇编程序，下载地址如下OllyDebug看雪论坛的Traceme.exe下载地址如下,用这个可以很好地学习ODTraceme.exeTraceMe是一个很小的win32程序,输入用户名和对应的序列号才可以通过测试,拿到flag">
-<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/ol1.png">
-<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/ol2.png">
-<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/ol3.png">
-<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/ol4.png">
-<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/ol5.png">
-<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/ol6.png">
-<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/ol7.png">
-<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/ol8.png">
-<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/ol9.png">
-<meta property="og:updated_time" content="2016-10-19T08:21:22.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="OllyDebug工具使用技巧(TraceMe Write Up)">
-<meta name="twitter:description" content="OllyDebug是一个Win32的反汇编程序，下载地址如下OllyDebug看雪论坛的Traceme.exe下载地址如下,用这个可以很好地学习ODTraceme.exeTraceMe是一个很小的win32程序,输入用户名和对应的序列号才可以通过测试,拿到flag">
-<meta name="twitter:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/ol1.png">
+<meta name="twitter:title" content="Welcome to Jdcool's Blog">
   
     <link rel="alternative" href="/atom.xml" title="Welcome to Jdcool&#39;s Blog" type="application/atom+xml">
   
@@ -82,110 +68,39 @@
   </div>
 </header>
     <div class="outer">
-      <section id="main"><article id="post-writeup2" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/11/19/writeup2/" class="article-date">
-  <time datetime="2015-11-18T16:00:00.000Z" itemprop="datePublished">2015-11-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+      <section id="main">
   
-    <h1 class="article-title" itemprop="name">
-      OllyDebug工具使用技巧(TraceMe Write Up)
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2016" class="archive-year">2016</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2016/10/20/nginx配置初探/" class="archive-article-date">
+  <time datetime="2016-10-19T18:57:53.000Z" itemprop="datePublished">Oct 20</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2016/10/20/nginx配置初探/">有关nginx配置的初步介绍</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>OllyDebug是一个Win32的反汇编程序，下载地址如下<br><a href="http://pan.baidu.com/s/1jG4MdWq" target="_blank" rel="external">OllyDebug</a><br>看雪论坛的Traceme.exe下载地址如下,用这个可以很好地学习OD<br><a href="http://pan.baidu.com/s/1mgvU75Q" target="_blank" rel="external">Traceme.exe</a><br>TraceMe是一个很小的win32程序,输入用户名和对应的序列号才可以通过测试,拿到flag</p>
-<a id="more"></a>
-<hr>
-<blockquote>
-<ul>
-<li><h2 id="利用OllyDebug暴力破解TraceMe"><a href="#利用OllyDebug暴力破解TraceMe" class="headerlink" title="利用OllyDebug暴力破解TraceMe."></a>利用OllyDebug暴力破解TraceMe.</h2></li>
-</ul>
-</blockquote>
-<h3 id="tips1-使用管理员模式打开OllyDebug"><a href="#tips1-使用管理员模式打开OllyDebug" class="headerlink" title="tips1.使用管理员模式打开OllyDebug"></a>tips1.使用管理员模式打开OllyDebug</h3><p><img src="http://7xn8lr.com1.z0.glb.clouddn.com/ol1.png" alt="OllyDebug"></p>
-<p>按F3选择TraceMe.exe打开 </p>
-<p><img src="http://7xn8lr.com1.z0.glb.clouddn.com/ol2.png" alt="TraceMe"></p>
-<p>可以看到,四个象限的内容分别是,寄存器状态栏,汇编格式指令栏,Hex16进制格式以及第四象限的堆栈区域.</p>
-<p>接下来介绍几个基本的快捷键</p>
-<h3 id="tips2-快捷键使用"><a href="#tips2-快捷键使用" class="headerlink" title="tips2.快捷键使用"></a>tips2.快捷键使用</h3><blockquote>
-<ul>
-<li>F2 下断点</li>
-<li>F3 打开文件</li>
-<li>F7 Step Into步入键,会进入call的函数中,包括用户函数和系统api</li>
-<li>F8 Step Over步进键,不会进入call的函数中</li>
-<li>F9 运行键,直接运行到下一个断点或者程序结束处</li>
-<li>CTRL+F9 运行到return处</li>
-<li>ALT+B 查看断点状态</li>
-<li>CTRL+G 查找输入的表达式</li>
-</ul>
-</blockquote>
-<p>按F7步入的话在过程中会看到很多系统api的执行,比较浪费时间,所以在我们具体查看某一个程序的行为的时候才使用F7</p>
-<p>我们先使用F8步进,直到程序启动到获取用户名和序列号,输入用户名和序列号,然后用F7测试下程序走到哪一步了.可以看到程序执行到了一个名叫GetDltItemTextA的系统API,这就是获取用户名和序列号到变量的一个函数,自此我们使用F8小心跟进.并在75E2F1E0位置F2下个断点，以便以后继续跟进到这里来。<br><img src="http://7xn8lr.com1.z0.glb.clouddn.com/ol3.png" alt=""><br><img src="http://7xn8lr.com1.z0.glb.clouddn.com/ol4.png" alt=""></p>
-<p>跟进的同时观察汇编指令区域的说明区域，可以看到跟进到004011BF的指令时，说明区域显示ASCII“fdjkal”，也就是我们之前输入的用户名，这里将其推入栈可能是以后有所用处。<br><img src="http://7xn8lr.com1.z0.glb.clouddn.com/ol5.png" alt=""></p>
-<p>继续跟进会发现又执行了一次GetText的函数，而在004011E3发现有说明，ASCII“fdjal”也就是我们输入的密码。继续</p>
-<p>接下来的两次PUSH，将我们的用户名和密码都推入了栈顶，而接下来要执行的一个call就很可能是一个比较函数。</p>
-<p>在比较函数完成之后我们跟进到一条TEST指令<br><img src="http://7xn8lr.com1.z0.glb.clouddn.com/ol6.png" alt=""><br>继续F8跟进发现在JE SHUORT 0040122E这条指令导致程序跳出提示框，测试错误。<br><img src="http://7xn8lr.com1.z0.glb.clouddn.com/ol7.png" alt=""><br>所以0040122E这个函数入口，而此时右边的寄存器里面看到<br><img src="http://7xn8lr.com1.z0.glb.clouddn.com/ol8.png" alt=""><br>C，P，A，Z，他们分别代表ES，附加段寄存器，CS，代码段寄存器，SS，堆栈段寄存器，DS，数据段寄存器，由于在执行TEST指令之后就JE跳出了错误测试提示，所以只用在TEST指令执行之后<br>探测这四个寄存器哪一个是寄存程序判断结果的就行了，依次将四个寄存器取反，可以发现当Z，DS寄存器取反后就没有弹出序列号错误的提示，表示暴力破解成功。<br><img src="http://7xn8lr.com1.z0.glb.clouddn.com/ol9.png" alt=""></p>
-<h3 id="tips3-暴力破解就是不管程序的验证细节和结果，进行破解的方式，与之相对的就是研究程序的验证细节，来编写逆向代码得到合法输入。"><a href="#tips3-暴力破解就是不管程序的验证细节和结果，进行破解的方式，与之相对的就是研究程序的验证细节，来编写逆向代码得到合法输入。" class="headerlink" title="tips3.暴力破解就是不管程序的验证细节和结果，进行破解的方式，与之相对的就是研究程序的验证细节，来编写逆向代码得到合法输入。"></a>tips3.暴力破解就是不管程序的验证细节和结果，进行破解的方式，与之相对的就是研究程序的验证细节，来编写逆向代码得到合法输入。</h3><hr>
-<blockquote>
-<ul>
-<li><h2 id="利用验证程序的逻辑编写逆向代码构造合法输入"><a href="#利用验证程序的逻辑编写逆向代码构造合法输入" class="headerlink" title="利用验证程序的逻辑编写逆向代码构造合法输入"></a>利用验证程序的逻辑编写逆向代码构造合法输入</h2></li>
-</ul>
-</blockquote>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-        <a data-url="http://x.xydayer.me/2015/11/19/writeup2/" data-id="ciuhab2yl000j8me6cfaim6hr" class="article-share-link" data-share="baidu" data-title="OllyDebug工具使用技巧(TraceMe Write Up)">分享到</a>
-      
-
-      
-        <a href="http://x.xydayer.me/2015/11/19/writeup2/#ds-thread" class="article-comment-link">评论</a>
-      
-
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Write-Up/">Write Up</a></li></ul>
-
-    </footer>
+    </header>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2015/12/11/7th/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">
-        
-          Python习题（给Python开个标签吧）
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2015/11/17/thinking/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">上一篇</strong>
-      <div class="article-nav-title">思考，关于技术</div>
-    </a>
-  
-</nav>
-
-  
 </article>
-
-
-  <section id="comments">
-    <div id="ds-thread" class="ds-thread" data-thread-key="2015/11/19/writeup2/" data-title="OllyDebug工具使用技巧(TraceMe Write Up)" data-url="http://x.xydayer.me/2015/11/19/writeup2/"></div>
-  </section>
+  
+  
+    </div></section>
+  
 </section>
       
       <aside id="sidebar">

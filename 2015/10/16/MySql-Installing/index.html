@@ -1,0 +1,483 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>如何安装、简单配置以及完全卸载MySQL | Welcome to Jdcool&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="MySQL的安装及简单配置
+昨天接到傻逼的任务说要在我个人笔记本上面安装一个数据库，我当时的想法是拒绝的，是的，是拒绝的，因为觉得这个东西装到个人电脑总感觉卸载不干净啊，而且对数据库没有好感。
+sad = = 好吧，那就开始吧。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何安装、简单配置以及完全卸载MySQL">
+<meta property="og:url" content="http://x.xydayer.me/2015/10/16/MySql-Installing/index.html">
+<meta property="og:site_name" content="Welcome to Jdcool's Blog">
+<meta property="og:description" content="MySQL的安装及简单配置
+昨天接到傻逼的任务说要在我个人笔记本上面安装一个数据库，我当时的想法是拒绝的，是的，是拒绝的，因为觉得这个东西装到个人电脑总感觉卸载不干净啊，而且对数据库没有好感。
+sad = = 好吧，那就开始吧。">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/sqli1.png">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/sqli2.png">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/sqli3.png">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/sqli4.png">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/sqli8.png">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/sqli9.png">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/sqli10.png">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/sqli12.png">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/sql5.png">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/sql6.png">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/sql7.png">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/sql8.png">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/sql9.png">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/sql11.png">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/sql12.png">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/sql13.png">
+<meta property="og:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/sql14.png">
+<meta property="og:updated_time" content="2016-10-19T08:21:22.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何安装、简单配置以及完全卸载MySQL">
+<meta name="twitter:description" content="MySQL的安装及简单配置
+昨天接到傻逼的任务说要在我个人笔记本上面安装一个数据库，我当时的想法是拒绝的，是的，是拒绝的，因为觉得这个东西装到个人电脑总感觉卸载不干净啊，而且对数据库没有好感。
+sad = = 好吧，那就开始吧。">
+<meta name="twitter:image" content="http://7xn8lr.com1.z0.glb.clouddn.com/sqli1.png">
+  
+    <link rel="alternative" href="/atom.xml" title="Welcome to Jdcool&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+</head>
+<body>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Welcome to Jdcool&#39;s Blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Winter is Coming</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="x.xydayer.me">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+    <div class="outer">
+      <section id="main"><article id="post-MySql-Installing" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/10/16/MySql-Installing/" class="article-date">
+  <time datetime="2015-10-15T18:58:10.000Z" itemprop="datePublished">2015-10-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      如何安装、简单配置以及完全卸载MySQL
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="MySQL的安装及简单配置"><a href="#MySQL的安装及简单配置" class="headerlink" title="MySQL的安装及简单配置"></a>MySQL的安装及简单配置</h1><hr>
+<p>昨天接到傻逼的任务说要在我个人笔记本上面安装一个数据库，我当时的想法是拒绝的，是的，是拒绝的，因为觉得这个东西装到个人电脑总感觉卸载不干净啊，而且对数据库没有好感。</p>
+<p>sad = = 好吧，那就开始吧。<br><a id="more"></a></p>
+<h3 id="1-下载及安装MySQL"><a href="#1-下载及安装MySQL" class="headerlink" title="1. 下载及安装MySQL"></a>1. 下载及安装MySQL</h3><p>懒得找下载链接的可以在我这里下载,版本是5.6版本的，东西不大200+MB。</p>
+<blockquote>
+<p><a href="http://pan.baidu.com/s/1sjyzGw1" target="_blank" rel="external">http://pan.baidu.com/s/1sjyzGw1</a></p>
+</blockquote>
+<p>下载完之后打开安装文件<br>选择第一个开始</p>
+<blockquote>
+<ul>
+<li>Install MySQL<br><img src="http://7xn8lr.com1.z0.glb.clouddn.com/sqli1.png" alt="选择Install MySQL"></li>
+</ul>
+</blockquote>
+<p>然后</p>
+<blockquote>
+<ul>
+<li>同意条款<br><img src="http://7xn8lr.com1.z0.glb.clouddn.com/sqli2.png" alt="同意条款"></li>
+</ul>
+</blockquote>
+<p>下一步的时候会选择要不要连接互联网,这个现在可以不用设置,等要设置的时候可以再去设置,所以两个都不要勾选,下面勾选check,让他不要自动检测更新。</p>
+<blockquote>
+<ul>
+<li>自动检测更新<br><img src="http://7xn8lr.com1.z0.glb.clouddn.com/sqli3.png" alt=""></li>
+</ul>
+</blockquote>
+<p>然后我们就到了选择setup type这一步了，我看到大多的人都推荐custom，也有人认为默认的default会比较好一点，这里的选择决定了安装完成后的配置是怎么样的。我建议的话，其实也是我个人比较喜欢偷懒，喜欢一应俱全，所以选择了full这个type，如果你的计算机资源都比较足够的话可以选择full。<strong>这里要注意你自己的安装路径</strong></p>
+<blockquote>
+<ul>
+<li>Setup Type<br><img src="http://7xn8lr.com1.z0.glb.clouddn.com/sqli4.png" alt=""></li>
+</ul>
+</blockquote>
+<p>然后一直Next到这一个位置:这里的Config Type是有三种选项的。</p>
+<blockquote>
+<ol>
+<li>Developer Machine: 也就是说你的机器只是用来作个人桌面工作站的。这个模式的配置会比较少的使用系统资源。</li>
+<li>Server Machine: 也就是说这是用于服务器的配置，可以同其他应用程序一起运行，如FTP、Email、Web Server。</li>
+<li>Dedicated MySQL Server Machine:说明是专用服务器，它为MySQL配置所有可用的系统资源。</li>
+</ol>
+</blockquote>
+<p>我们选择第一种就可以了。</p>
+<blockquote>
+<ul>
+<li>MySQL Server Configuration<br><img src="http://7xn8lr.com1.z0.glb.clouddn.com/sqli8.png" alt=""></li>
+</ul>
+</blockquote>
+<p>接下来就是配置用户了，用户分为root用户和自定义用户组用户，建议的话add一个非root用户。<br>配置如图：</p>
+<blockquote>
+<ul>
+<li>Add Users &amp; Set Password<br><img src="http://7xn8lr.com1.z0.glb.clouddn.com/sqli9.png" alt=""></li>
+</ul>
+</blockquote>
+<p>接下来就接近尾声了，命名你的Server Name<br>并且按照你个人意愿勾选是否开机启动。（很明显我个人很讨厌这个……sad）</p>
+<blockquote>
+<ul>
+<li>Complete Your Server Configuration<br><img src="http://7xn8lr.com1.z0.glb.clouddn.com/sqli10.png" alt=""></li>
+</ul>
+<ul>
+<li>Done<br><img src="http://7xn8lr.com1.z0.glb.clouddn.com/sqli12.png" alt=""></li>
+</ul>
+</blockquote>
+<p><strong>安装到此为止</strong></p>
+<hr>
+<h3 id="2-简单配置MySQL"><a href="#2-简单配置MySQL" class="headerlink" title="2. 简单配置MySQL"></a>2. 简单配置MySQL</h3><p>这个时候你的默认MySQL（我的是MySQL-J）应该是已经开启了的。<br>可以在你的任务管理器或者右下角的状态栏里面看到数据库的开启状况（那个小企鹅= = ）</p>
+<blockquote>
+<ul>
+<li>首先 打开你的安装目录里的MySQL Server 5.6文件夹 </li>
+</ul>
+</blockquote>
+<p>我的在<strong>C:\Program Files\MySQL\MySQL Server 5.6</strong></p>
+<blockquote>
+<ul>
+<li>然后 修改my-default.ini文件的安全属性，打开修改权限。<br><img src="http://7xn8lr.com1.z0.glb.clouddn.com/sql5.png" alt="修改权限"><img src="http://7xn8lr.com1.z0.glb.clouddn.com/sql6.png" alt="修改权限"></li>
+</ul>
+<ul>
+<li>继续 修改my-default.ini（或者my.ini）如果没有你就自己创建一个吧。</li>
+</ul>
+</blockquote>
+<p>把basedir和datadir两个路径补全，并把前面的#注释符号删除！<br><img src="http://7xn8lr.com1.z0.glb.clouddn.com/sql7.png" alt="修改文件"></p>
+<blockquote>
+<ul>
+<li>然后 管理员权限打开cmd<br><img src="http://7xn8lr.com1.z0.glb.clouddn.com/sql8.png" alt="cmd"></li>
+</ul>
+</blockquote>
+<p>如果直接运行net start mysql,是会出错的</p>
+<p><img src="http://7xn8lr.com1.z0.glb.clouddn.com/sql9.png" alt=""></p>
+<blockquote>
+<ul>
+<li>那么我们还需要在<strong>我的电脑-&gt;属性-&gt;环境变量-&gt;Path</strong>的字段后面<strong>添加</strong>!注意不是<strong>替代</strong>整个path而是<strong>添加</strong>路径<br><img src="http://7xn8lr.com1.z0.glb.clouddn.com/sql11.png" alt=""></li>
+</ul>
+<ul>
+<li>cmd(管理员)中输入</li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd C:\Program Files\MySQL\MySQL Server 5.6\bin</div><div class="line">mysqld -install</div></pre></td></tr></table></figure>
+<p>mysqld 是MySQL的守护程序，每次开启MySQL之前都要先开启MySQLD，我们先安装它</p>
+<p><img src="http://7xn8lr.com1.z0.glb.clouddn.com/sql12.png" alt=""></p>
+<p>如果这时候我们运行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">net start mysql</div></pre></td></tr></table></figure>
+<p>那么很有可能出现1067错误,网上很多人都说1067错误是my-default.ini配置错误导致的<br>实际上根据不同情况有不同的原因,如果你是第一次安装MySQL那么可能是由于<br><strong>你已经开启了一个MySQL服务</strong><br>如果曾经运行过MySQL一段时间,那么是配置错误的可能性就比较高了。可以通过看日志解决。<br><img src="http://7xn8lr.com1.z0.glb.clouddn.com/sql13.png" alt=""><br>当我们关闭原来的MySQL服务<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">net stop mysql</div></pre></td></tr></table></figure></p>
+<p>然后执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">net start mysql</div></pre></td></tr></table></figure></p>
+<p><img src="http://7xn8lr.com1.z0.glb.clouddn.com/sql14.png" alt=""></p>
+<p><strong>这样简单配置就完成啦</strong></p>
+<hr>
+<h3 id="3-如何卸载MySQL"><a href="#3-如何卸载MySQL" class="headerlink" title="3. 如何卸载MySQL"></a>3. 如何卸载MySQL</h3><blockquote>
+<ol>
+<li>在程序和功能中执行uninstall程序(或者执行MySQL Installer 选取 remove MySQL)</li>
+<li>删除\MySQL\MySQL Server 5.6\data文件夹(或者整个删除掉)</li>
+<li>在regedit中删除注册表</li>
+</ol>
+</blockquote>
+<p>这里给出一个链接，可以看一看卸载</p>
+<p><a href="http://jingyan.baidu.com/article/f96699bbaa8fc1894f3c1b5a.html" target="_blank" rel="external">如何卸载MySQL</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://x.xydayer.me/2015/10/16/MySql-Installing/" data-id="ciui1hq790001nte63eqknorx" class="article-share-link" data-share="baidu" data-title="如何安装、简单配置以及完全卸载MySQL">Share</a>
+      
+
+      
+        <a href="http://x.xydayer.me/2015/10/16/MySql-Installing/#ds-thread" class="article-comment-link">Comments</a>
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MySQL/">MySQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数据库/">数据库</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/10/17/kali-nessus/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          U盘启动安装Kali Linux以及Nessus安装
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/10/08/原始人/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">原始人万岁</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+  <section id="comments">
+    <div id="ds-thread" class="ds-thread" data-thread-key="2015/10/16/MySql-Installing/" data-title="如何安装、简单配置以及完全卸载MySQL" data-url="http://x.xydayer.me/2015/10/16/MySql-Installing/"></div>
+  </section>
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/">MySQL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/">Python</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Write-Up/">Write Up</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kali/">kali</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nginx/">nginx</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/个人/">个人</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客相关/">博客相关</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/后端/">后端</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据库/">数据库</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日常/">日常</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/负载均衡/">负载均衡</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/MySQL/" style="font-size: 10px;">MySQL</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/Write-Up/" style="font-size: 20px;">Write Up</a> <a href="/tags/kali/" style="font-size: 10px;">kali</a> <a href="/tags/nginx/" style="font-size: 10px;">nginx</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/个人/" style="font-size: 20px;">个人</a> <a href="/tags/博客相关/" style="font-size: 10px;">博客相关</a> <a href="/tags/后端/" style="font-size: 10px;">后端</a> <a href="/tags/数据库/" style="font-size: 10px;">数据库</a> <a href="/tags/日常/" style="font-size: 10px;">日常</a> <a href="/tags/负载均衡/" style="font-size: 10px;">负载均衡</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/10/20/nginx配置初探/">有关nginx配置的初步介绍</a>
+          </li>
+        
+          <li>
+            <a href="/2015/12/11/pythonPractice/">Python习题（给Python开个标签吧）</a>
+          </li>
+        
+          <li>
+            <a href="/2015/12/11/dailyworkLog/">日常打卡</a>
+          </li>
+        
+          <li>
+            <a href="/2015/11/19/writeup2/">OllyDebug工具使用技巧(TraceMe Write Up)</a>
+          </li>
+        
+          <li>
+            <a href="/2015/11/17/thinking/">思考，关于技术</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Links</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="http://xiguabaobao.com" target="_blank">主题作者</a>
+          </li>
+        
+          <li>
+            <a href="http://y.xydayer.me" target="_blank">大傻逼</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Jdcool<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape-plus</a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+  <!-- totop start -->
+<div id="totop">
+<a title="totop"><img src="/img/scrollup.png"/></a>
+</div>
+
+<!-- totop end -->
+
+<!-- 多说公共js代码 start -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"jdcrew"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共js代码 end -->
+
+
+<!-- 百度分享 start -->
+
+<div id="article-share-box" class="article-share-box">
+  <div id="bdshare" class="bdsharebuttonbox article-share-links">
+    <a class="article-share-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a class="article-share-weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a class="article-share-qq" data-cmd="sqq" title="分享到QQ"></a>
+    <a class="article-share-renren" data-cmd="renren" title="分享到人人网"></a>
+    <a class="article-share-more" data-cmd="more" title="更多"></a>
+  </div>
+</div>
+<script>
+  function SetShareData(cmd, config) {
+    if (shareDataTitle && shareDataUrl) {
+      config.bdText = shareDataTitle;
+      config.bdUrl = shareDataUrl;
+    }
+    return config;
+  }
+  window._bd_share_config={
+    "common":{onBeforeClick: SetShareData},
+    "share":{"bdCustomStyle":"/css/bdshare.css"}
+  };
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+<!-- 百度分享 end -->
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+<! -- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+                processEscapes: true
+                    
+}
+  
+        });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+                  
+}
+    
+        });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Queue(function() {
+            var all = MathJax.Hub.getAllJax(), i;
+            for(i=0; i < all.length; i += 1) {
+                            all[i].SourceElement().parentNode.className += ' has-jax';
+                                    
+            }
+                
+        });
+</script>
+
+<script type="text/javascript" src="http://cdn.bootcss.com/mathjax/2.5.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<script src="/js/script.js"></script>
+
+</div>
+</body>
+</html>
